@@ -28,152 +28,195 @@
         /// </summary>
         private void InitializeComponent()
         {
-            label1 = new Label();
+            meminfo = new Label();
             dataGridView1 = new DataGridView();
-            PhoneBtn = new ComboBox();
-            emailBtn = new ComboBox();
-            comboBox4 = new ComboBox();
-            comboBox5 = new ComboBox();
-            comboBox6 = new ComboBox();
             textBox1 = new TextBox();
             textBox2 = new TextBox();
             LastnameBox = new TextBox();
             FirstnameBox = new TextBox();
             textBox5 = new TextBox();
-            BackBtn = new Button();
+            textBox3 = new TextBox();
+            textBox4 = new TextBox();
+            textBox6 = new TextBox();
+            textBox7 = new TextBox();
+            textBox8 = new TextBox();
+            srch = new Button();
+            back = new Button();
+            updt = new Button();
+            dlt = new Button();
+            add = new Button();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
-            // label1
+            // meminfo
             // 
-            label1.AutoSize = true;
-            label1.Location = new Point(635, 57);
-            label1.Name = "label1";
-            label1.Size = new Size(237, 25);
-            label1.TabIndex = 0;
-            label1.Text = "Member's Information";
-            label1.TextAlign = ContentAlignment.MiddleCenter;
+            meminfo.AutoSize = true;
+            meminfo.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            meminfo.Location = new Point(638, 35);
+            meminfo.Name = "meminfo";
+            meminfo.Size = new Size(232, 30);
+            meminfo.TabIndex = 0;
+            meminfo.Text = "Member's Information";
+            meminfo.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // dataGridView1
             // 
             dataGridView1.BackgroundColor = Color.Honeydew;
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(440, 104);
+            dataGridView1.Location = new Point(380, 78);
             dataGridView1.Name = "dataGridView1";
-            dataGridView1.Size = new Size(688, 425);
+            dataGridView1.Size = new Size(689, 466);
             dataGridView1.TabIndex = 1;
-            // 
-            // PhoneBtn
-            // 
-            PhoneBtn.FlatStyle = FlatStyle.Popup;
-            PhoneBtn.FormattingEnabled = true;
-            PhoneBtn.Location = new Point(193, 427);
-            PhoneBtn.Name = "PhoneBtn";
-            PhoneBtn.Size = new Size(121, 33);
-            PhoneBtn.TabIndex = 24;
-            // 
-            // emailBtn
-            // 
-            emailBtn.FlatStyle = FlatStyle.Popup;
-            emailBtn.FormattingEnabled = true;
-            emailBtn.Location = new Point(193, 347);
-            emailBtn.Name = "emailBtn";
-            emailBtn.Size = new Size(121, 33);
-            emailBtn.TabIndex = 25;
-            // 
-            // comboBox4
-            // 
-            comboBox4.FlatStyle = FlatStyle.Popup;
-            comboBox4.FormattingEnabled = true;
-            comboBox4.Location = new Point(193, 268);
-            comboBox4.Name = "comboBox4";
-            comboBox4.Size = new Size(121, 33);
-            comboBox4.TabIndex = 26;
-            // 
-            // comboBox5
-            // 
-            comboBox5.FlatStyle = FlatStyle.Popup;
-            comboBox5.FormattingEnabled = true;
-            comboBox5.Location = new Point(193, 187);
-            comboBox5.Name = "comboBox5";
-            comboBox5.Size = new Size(121, 33);
-            comboBox5.TabIndex = 27;
-            // 
-            // comboBox6
-            // 
-            comboBox6.FlatStyle = FlatStyle.Popup;
-            comboBox6.FormattingEnabled = true;
-            comboBox6.Location = new Point(193, 104);
-            comboBox6.Name = "comboBox6";
-            comboBox6.Size = new Size(121, 33);
-            comboBox6.TabIndex = 28;
             // 
             // textBox1
             // 
+            textBox1.BackColor = Color.MediumSeaGreen;
             textBox1.BorderStyle = BorderStyle.None;
-            textBox1.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
-            textBox1.Location = new Point(35, 429);
+            textBox1.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            textBox1.Location = new Point(49, 264);
             textBox1.Name = "textBox1";
             textBox1.Size = new Size(114, 19);
             textBox1.TabIndex = 30;
-            textBox1.Text = "PHONE NO.:";
+            textBox1.Text = "Phone No. :";
             textBox1.TextAlign = HorizontalAlignment.Center;
             // 
             // textBox2
             // 
+            textBox2.BackColor = Color.MediumSeaGreen;
             textBox2.BorderStyle = BorderStyle.None;
-            textBox2.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
-            textBox2.Location = new Point(35, 347);
+            textBox2.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            textBox2.Location = new Point(35, 217);
             textBox2.Name = "textBox2";
             textBox2.Size = new Size(100, 19);
             textBox2.TabIndex = 31;
-            textBox2.Text = "EMAIL:";
+            textBox2.Text = "Email :";
             textBox2.TextAlign = HorizontalAlignment.Center;
             // 
             // LastnameBox
             // 
+            LastnameBox.BackColor = Color.MediumSeaGreen;
             LastnameBox.BorderStyle = BorderStyle.None;
-            LastnameBox.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
-            LastnameBox.Location = new Point(35, 268);
+            LastnameBox.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            LastnameBox.Location = new Point(49, 170);
             LastnameBox.Name = "LastnameBox";
             LastnameBox.Size = new Size(114, 19);
             LastnameBox.TabIndex = 32;
-            LastnameBox.Text = "LAST NAME:";
+            LastnameBox.Text = "Last Name :";
             LastnameBox.TextAlign = HorizontalAlignment.Center;
             // 
             // FirstnameBox
             // 
+            FirstnameBox.BackColor = Color.MediumSeaGreen;
             FirstnameBox.BorderStyle = BorderStyle.None;
-            FirstnameBox.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
-            FirstnameBox.Location = new Point(35, 187);
+            FirstnameBox.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            FirstnameBox.Location = new Point(49, 122);
             FirstnameBox.Name = "FirstnameBox";
             FirstnameBox.Size = new Size(114, 19);
             FirstnameBox.TabIndex = 33;
-            FirstnameBox.Text = "FIRST NAME:";
+            FirstnameBox.Text = "First Name :";
             FirstnameBox.TextAlign = HorizontalAlignment.Center;
             // 
             // textBox5
             // 
+            textBox5.BackColor = Color.MediumSeaGreen;
             textBox5.BorderStyle = BorderStyle.None;
-            textBox5.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
-            textBox5.Location = new Point(35, 106);
+            textBox5.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            textBox5.Location = new Point(49, 78);
             textBox5.Name = "textBox5";
             textBox5.Size = new Size(100, 19);
             textBox5.TabIndex = 34;
-            textBox5.Text = "Member ID:";
+            textBox5.Text = "MemberID :";
             textBox5.TextAlign = HorizontalAlignment.Center;
             // 
-            // BackBtn
+            // textBox3
             // 
-            BackBtn.FlatStyle = FlatStyle.Popup;
-            BackBtn.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            BackBtn.Location = new Point(-1, 0);
-            BackBtn.Name = "BackBtn";
-            BackBtn.Size = new Size(75, 23);
-            BackBtn.TabIndex = 35;
-            BackBtn.Text = "Back";
-            BackBtn.UseVisualStyleBackColor = true;
-            BackBtn.Click += BackBtn_Click;
+            textBox3.Location = new Point(175, 78);
+            textBox3.Name = "textBox3";
+            textBox3.Size = new Size(139, 31);
+            textBox3.TabIndex = 36;
+            // 
+            // textBox4
+            // 
+            textBox4.Location = new Point(175, 217);
+            textBox4.Name = "textBox4";
+            textBox4.Size = new Size(139, 31);
+            textBox4.TabIndex = 37;
+            // 
+            // textBox6
+            // 
+            textBox6.Location = new Point(175, 170);
+            textBox6.Name = "textBox6";
+            textBox6.Size = new Size(139, 31);
+            textBox6.TabIndex = 38;
+            // 
+            // textBox7
+            // 
+            textBox7.Location = new Point(175, 122);
+            textBox7.Name = "textBox7";
+            textBox7.Size = new Size(139, 31);
+            textBox7.TabIndex = 39;
+            // 
+            // textBox8
+            // 
+            textBox8.Location = new Point(175, 264);
+            textBox8.Name = "textBox8";
+            textBox8.Size = new Size(139, 31);
+            textBox8.TabIndex = 40;
+            // 
+            // srch
+            // 
+            srch.BackColor = Color.DarkSeaGreen;
+            srch.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            srch.Location = new Point(49, 339);
+            srch.Name = "srch";
+            srch.Size = new Size(86, 31);
+            srch.TabIndex = 41;
+            srch.Text = "Search";
+            srch.UseVisualStyleBackColor = false;
+            // 
+            // back
+            // 
+            back.BackColor = Color.DarkSeaGreen;
+            back.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            back.Location = new Point(130, 447);
+            back.Name = "back";
+            back.Size = new Size(86, 31);
+            back.TabIndex = 42;
+            back.Text = "Back";
+            back.UseVisualStyleBackColor = false;
+            // 
+            // updt
+            // 
+            updt.BackColor = Color.DarkSeaGreen;
+            updt.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            updt.Location = new Point(204, 388);
+            updt.Name = "updt";
+            updt.Size = new Size(86, 31);
+            updt.TabIndex = 43;
+            updt.Text = "Update";
+            updt.UseVisualStyleBackColor = false;
+            // 
+            // dlt
+            // 
+            dlt.BackColor = Color.DarkSeaGreen;
+            dlt.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            dlt.Location = new Point(49, 388);
+            dlt.Name = "dlt";
+            dlt.Size = new Size(86, 31);
+            dlt.TabIndex = 44;
+            dlt.Text = "Delete";
+            dlt.UseVisualStyleBackColor = false;
+            // 
+            // add
+            // 
+            add.BackColor = Color.DarkSeaGreen;
+            add.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            add.Location = new Point(204, 339);
+            add.Name = "add";
+            add.Size = new Size(86, 31);
+            add.TabIndex = 45;
+            add.Text = "Add";
+            add.UseVisualStyleBackColor = false;
             // 
             // MembersInfocs
             // 
@@ -181,19 +224,23 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.MediumSeaGreen;
             ClientSize = new Size(1220, 569);
-            Controls.Add(BackBtn);
+            Controls.Add(add);
+            Controls.Add(dlt);
+            Controls.Add(updt);
+            Controls.Add(back);
+            Controls.Add(srch);
+            Controls.Add(textBox8);
+            Controls.Add(textBox7);
+            Controls.Add(textBox6);
+            Controls.Add(textBox4);
+            Controls.Add(textBox3);
             Controls.Add(textBox5);
             Controls.Add(FirstnameBox);
             Controls.Add(LastnameBox);
             Controls.Add(textBox2);
             Controls.Add(textBox1);
-            Controls.Add(comboBox6);
-            Controls.Add(comboBox5);
-            Controls.Add(comboBox4);
-            Controls.Add(emailBtn);
-            Controls.Add(PhoneBtn);
             Controls.Add(dataGridView1);
-            Controls.Add(label1);
+            Controls.Add(meminfo);
             Font = new Font("Microsoft Sans Serif", 15.75F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
             FormBorderStyle = FormBorderStyle.None;
             Margin = new Padding(6, 5, 6, 5);
@@ -206,20 +253,23 @@
 
         #endregion
 
-        private Label label1;
+        private Label meminfo;
         private DataGridView dataGridView1;
         private ComboBox comboBox1;
-        private ComboBox PhoneBtn;
-        private ComboBox emailBtn;
-        private ComboBox comboBox4;
-        private ComboBox comboBox5;
-        private ComboBox comboBox6;
         private TextBox textBox6;
         private TextBox textBox1;
         private TextBox textBox2;
         private TextBox LastnameBox;
         private TextBox FirstnameBox;
         private TextBox textBox5;
-        private Button BackBtn;
+        private TextBox textBox3;
+        private TextBox textBox4;
+        private TextBox textBox7;
+        private TextBox textBox8;
+        private Button srch;
+        private Button back;
+        private Button updt;
+        private Button dlt;
+        private Button add;
     }
 }

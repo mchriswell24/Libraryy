@@ -25,7 +25,7 @@ namespace Library
 
         private void AuthorBtn_Click(object sender, EventArgs e)
         {
-            AuthorInfo authorInfoForm = new AuthorInfo();
+            searchbtn authorInfoForm = new searchbtn();
             authorInfoForm.Show();
             this.Hide();
         }
@@ -48,6 +48,11 @@ namespace Library
         private void CrossBtn_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

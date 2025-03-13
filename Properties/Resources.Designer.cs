@@ -63,6 +63,16 @@ namespace Library.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _482669819_638377848771400_2931107360208488733_n {
+            get {
+                object obj = ResourceManager.GetObject("482669819_638377848771400_2931107360208488733_n", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap oo {
             get {
                 object obj = ResourceManager.GetObject("oo", resourceCulture);

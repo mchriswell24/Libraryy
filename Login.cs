@@ -10,18 +10,26 @@ using System.Windows.Forms;
 
 namespace Library
 {
-    public partial class AuthorInfo : Form
+    public partial class Login : Form
     {
-        public AuthorInfo()
+        public Login()
         {
             InitializeComponent();
         }
 
-        private void BackBtn_Click(object sender, EventArgs e)
+        private void loginbtn_Click(object sender, EventArgs e)
         {
-            AdminForm adminForm = new AdminForm(); // Create an instance of AdminForm
-            adminForm.Show(); // Show the AdminForm
-            this.Close();
+
+        }
+
+        private void passbtn_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

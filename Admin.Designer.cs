@@ -28,92 +28,89 @@
         /// </summary>
         private void InitializeComponent()
         {
-            pictureBox1 = new PictureBox();
-            AuthorBtn = new Button();
-            BookBtn = new Button();
-            MembersBtn = new Button();
-            CrossBtn = new Button();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            records = new Button();
+            button1 = new Button();
+            authorbtn = new Button();
+            Bookbtn = new Button();
+            Bck = new Button();
             SuspendLayout();
             // 
-            // pictureBox1
+            // records
             // 
-            pictureBox1.BackgroundImage = Properties.Resources.oo;
-            pictureBox1.BackgroundImageLayout = ImageLayout.Stretch;
-            pictureBox1.Location = new Point(115, 79);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(174, 174);
-            pictureBox1.TabIndex = 4;
-            pictureBox1.TabStop = false;
+            records.BackColor = Color.DarkSeaGreen;
+            records.Location = new Point(67, 287);
+            records.Name = "records";
+            records.Size = new Size(193, 36);
+            records.TabIndex = 8;
+            records.Text = "BorrowingRecords";
+            records.UseVisualStyleBackColor = false;
+            records.Click += button1_Click;
             // 
-            // AuthorBtn
+            // button1
             // 
-            AuthorBtn.Location = new Point(33, 325);
-            AuthorBtn.Name = "AuthorBtn";
-            AuthorBtn.Size = new Size(124, 36);
-            AuthorBtn.TabIndex = 5;
-            AuthorBtn.Text = "Author";
-            AuthorBtn.UseVisualStyleBackColor = true;
-            AuthorBtn.Click += AuthorBtn_Click;
+            button1.BackColor = Color.DarkSeaGreen;
+            button1.Location = new Point(317, 287);
+            button1.Name = "button1";
+            button1.Size = new Size(139, 36);
+            button1.TabIndex = 9;
+            button1.Text = "Member";
+            button1.UseVisualStyleBackColor = false;
             // 
-            // BookBtn
+            // authorbtn
             // 
-            BookBtn.Location = new Point(227, 325);
-            BookBtn.Name = "BookBtn";
-            BookBtn.Size = new Size(124, 36);
-            BookBtn.TabIndex = 6;
-            BookBtn.Text = "Books";
-            BookBtn.UseVisualStyleBackColor = true;
-            BookBtn.Click += BookBtn_Click;
+            authorbtn.BackColor = Color.DarkSeaGreen;
+            authorbtn.Location = new Point(526, 287);
+            authorbtn.Name = "authorbtn";
+            authorbtn.Size = new Size(141, 36);
+            authorbtn.TabIndex = 10;
+            authorbtn.Text = "Author";
+            authorbtn.UseVisualStyleBackColor = false;
             // 
-            // MembersBtn
+            // Bookbtn
             // 
-            MembersBtn.Location = new Point(139, 398);
-            MembersBtn.Name = "MembersBtn";
-            MembersBtn.Size = new Size(124, 36);
-            MembersBtn.TabIndex = 7;
-            MembersBtn.Text = "Members";
-            MembersBtn.UseVisualStyleBackColor = true;
-            MembersBtn.Click += MembersBtn_Click;
+            Bookbtn.BackColor = Color.DarkSeaGreen;
+            Bookbtn.Location = new Point(726, 287);
+            Bookbtn.Name = "Bookbtn";
+            Bookbtn.Size = new Size(124, 36);
+            Bookbtn.TabIndex = 11;
+            Bookbtn.Text = "Book";
+            Bookbtn.UseVisualStyleBackColor = false;
             // 
-            // CrossBtn
+            // Bck
             // 
-            CrossBtn.FlatStyle = FlatStyle.Popup;
-            CrossBtn.Location = new Point(374, 0);
-            CrossBtn.Name = "CrossBtn";
-            CrossBtn.Size = new Size(47, 30);
-            CrossBtn.TabIndex = 8;
-            CrossBtn.Text = "X";
-            CrossBtn.UseVisualStyleBackColor = true;
-            CrossBtn.Click += CrossBtn_Click;
+            Bck.BackColor = Color.DarkSeaGreen;
+            Bck.Location = new Point(448, 353);
+            Bck.Name = "Bck";
+            Bck.Size = new Size(92, 36);
+            Bck.TabIndex = 12;
+            Bck.Text = "Back";
+            Bck.UseVisualStyleBackColor = false;
             // 
             // AdminForm
             // 
             AutoScaleDimensions = new SizeF(12F, 24F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.MediumSeaGreen;
-            ClientSize = new Size(419, 543);
-            Controls.Add(CrossBtn);
-            Controls.Add(MembersBtn);
-            Controls.Add(BookBtn);
-            Controls.Add(AuthorBtn);
-            Controls.Add(pictureBox1);
+            ClientSize = new Size(938, 543);
+            Controls.Add(Bck);
+            Controls.Add(Bookbtn);
+            Controls.Add(authorbtn);
+            Controls.Add(button1);
+            Controls.Add(records);
             Font = new Font("Microsoft Sans Serif", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             FormBorderStyle = FormBorderStyle.None;
             Margin = new Padding(5);
             Name = "AdminForm";
             Text = "Admin";
             Load += AdminBtn_Load;
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
         }
 
         #endregion
-
-        private PictureBox pictureBox1;
-        private Button AuthorBtn;
-        private Button BookBtn;
-        private Button MembersBtn;
-        private Button CrossBtn;
+        private Button records;
+        private Button button1;
+        private Button authorbtn;
+        private Button Bookbtn;
+        private Button Bck;
     }
 }

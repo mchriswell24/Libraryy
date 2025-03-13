@@ -26,51 +26,16 @@ namespace Library
 
         private void CreateBtn_TextChanged(object sender, EventArgs e)
         {
-            using (SQLiteConnection conn = new SQLiteConnection(connectionString))
-            {
-                conn.Open();
-                string query = "INSERT INTO Borrowing (RecordID, AuthorID, BookID, MemberID) VALUES (@BookTitle, @BorrowerName, @BorrowDate)";
-                using (SQLiteCommand cmd = new SQLiteCommand(query, conn))
-                {
-                    cmd.Parameters.AddWithValue("@BookTitle", txtBookTitle.Text);
-                    cmd.Parameters.AddWithValue("@BorrowerName", txtBorrowerName.Text);
-                    cmd.Parameters.AddWithValue("@BorrowDate", DateTime.Now);
-
-                    cmd.ExecuteNonQuery();
-                    MessageBox.Show("Record Added Successfully!");
-                }
+            
             }
-        }
+        
         private void RetrieveBtn_TextChanged(object sender, EventArgs e)
         {
-            using (SQLiteConnection conn = new SQLiteConnection(connectionString))
-            {
-                conn.Open();
-                string query = "SELECT * FROM Borrowing";
-                using (SQLiteDataAdapter adapter = new SQLiteDataAdapter(query, conn))
-                {
-                    DataTable dt = new DataTable();
-                    adapter.Fill(dt);
-                    dataGridView1.DataSource = dt;
-                }
-            }
+            
         }
         private void UpdateBtn_TextChanged(object sender, EventArgs e)
         {
-            using (SQLiteConnection conn = new SQLiteConnection(connectionString))
-            {
-                conn.Open();
-                string query = "UPDATE Borrowing SET BookTitle = @BookTitle, BorrowerName = @BorrowerName WHERE ID = @ID";
-                using (SQLiteCommand cmd = new SQLiteCommand(query, conn))
-                {
-                    cmd.Parameters.AddWithValue("@ID", txtID.Text);
-                    cmd.Parameters.AddWithValue("@BookTitle", txtBookTitle.Text);
-                    cmd.Parameters.AddWithValue("@BorrowerName", txtBorrowerName.Text);
-
-                    cmd.ExecuteNonQuery();
-                    MessageBox.Show("Record Updated Successfully!");
-                }
-            }
+            
         }
         
 
@@ -81,17 +46,7 @@ namespace Library
 
         private void DeleteBtn_TextChanged(object sender, EventArgs e)
         {
-            using (SQLiteConnection conn = new SQLiteConnection(connectionString))
-            {
-                conn.Open();
-                string query = "DELETE FROM Borrowing WHERE ID = @ID";
-                using (SQLiteCommand cmd = new SQLiteCommand(query, conn))
-                {
-                    cmd.Parameters.AddWithValue("@ID", txtID.Text);
-                    cmd.ExecuteNonQuery();
-                    MessageBox.Show("Record Deleted Successfully!");
-                }
-            }
+            
         
     }
     }

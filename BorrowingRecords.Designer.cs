@@ -35,24 +35,25 @@
             textBox4 = new TextBox();
             dataGridView1 = new DataGridView();
             label1 = new Label();
-            comboBox6 = new ComboBox();
-            comboBox1 = new ComboBox();
-            comboBox2 = new ComboBox();
-            comboBox3 = new ComboBox();
-            comboBox4 = new ComboBox();
-            RetrieveBtn = new TextBox();
-            DeleteBtn = new TextBox();
-            UpdateBtn = new TextBox();
-            CreateBtn = new TextBox();
-            BackBtn = new Button();
+            textBox6 = new TextBox();
+            textBox7 = new TextBox();
+            textBox8 = new TextBox();
+            textBox9 = new TextBox();
+            textBox10 = new TextBox();
+            search = new Button();
+            BACK = new Button();
+            UPDATE = new Button();
+            DELETE = new Button();
+            ADD = new Button();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
             // textBox5
             // 
+            textBox5.BackColor = Color.MediumSeaGreen;
             textBox5.BorderStyle = BorderStyle.None;
             textBox5.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
-            textBox5.Location = new Point(55, 479);
+            textBox5.Location = new Point(55, 275);
             textBox5.Name = "textBox5";
             textBox5.Size = new Size(118, 19);
             textBox5.TabIndex = 35;
@@ -61,9 +62,10 @@
             // 
             // textBox1
             // 
+            textBox1.BackColor = Color.MediumSeaGreen;
             textBox1.BorderStyle = BorderStyle.None;
             textBox1.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
-            textBox1.Location = new Point(55, 380);
+            textBox1.Location = new Point(55, 235);
             textBox1.Name = "textBox1";
             textBox1.Size = new Size(118, 19);
             textBox1.TabIndex = 36;
@@ -72,9 +74,10 @@
             // 
             // textBox2
             // 
+            textBox2.BackColor = Color.MediumSeaGreen;
             textBox2.BorderStyle = BorderStyle.None;
             textBox2.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
-            textBox2.Location = new Point(55, 298);
+            textBox2.Location = new Point(55, 197);
             textBox2.Name = "textBox2";
             textBox2.Size = new Size(118, 19);
             textBox2.TabIndex = 37;
@@ -83,6 +86,7 @@
             // 
             // textBox3
             // 
+            textBox3.BackColor = Color.MediumSeaGreen;
             textBox3.BorderStyle = BorderStyle.None;
             textBox3.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
             textBox3.Location = new Point(55, 116);
@@ -94,9 +98,10 @@
             // 
             // textBox4
             // 
+            textBox4.BackColor = Color.MediumSeaGreen;
             textBox4.BorderStyle = BorderStyle.None;
             textBox4.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
-            textBox4.Location = new Point(55, 197);
+            textBox4.Location = new Point(55, 156);
             textBox4.Name = "textBox4";
             textBox4.Size = new Size(118, 19);
             textBox4.TabIndex = 39;
@@ -107,131 +112,112 @@
             // 
             dataGridView1.BackgroundColor = Color.Honeydew;
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(481, 112);
+            dataGridView1.Location = new Point(358, 78);
             dataGridView1.Name = "dataGridView1";
-            dataGridView1.Size = new Size(653, 386);
+            dataGridView1.Size = new Size(696, 587);
             dataGridView1.TabIndex = 40;
             // 
             // label1
             // 
             label1.AutoSize = true;
             label1.FlatStyle = FlatStyle.Popup;
-            label1.Font = new Font("Microsoft Sans Serif", 15.75F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
-            label1.Location = new Point(702, 63);
+            label1.Font = new Font("Segoe UI", 18F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            label1.Location = new Point(622, 29);
             label1.Name = "label1";
-            label1.Size = new Size(211, 25);
+            label1.Size = new Size(227, 32);
             label1.TabIndex = 41;
             label1.Text = "Borrowing Records";
             label1.TextAlign = ContentAlignment.MiddleCenter;
             // 
-            // comboBox6
+            // textBox6
             // 
-            comboBox6.FlatStyle = FlatStyle.Popup;
-            comboBox6.FormattingEnabled = true;
-            comboBox6.Location = new Point(233, 475);
-            comboBox6.Name = "comboBox6";
-            comboBox6.Size = new Size(121, 23);
-            comboBox6.TabIndex = 42;
+            textBox6.Location = new Point(218, 117);
+            textBox6.Name = "textBox6";
+            textBox6.Size = new Size(100, 23);
+            textBox6.TabIndex = 52;
             // 
-            // comboBox1
+            // textBox7
             // 
-            comboBox1.FlatStyle = FlatStyle.Popup;
-            comboBox1.FormattingEnabled = true;
-            comboBox1.Location = new Point(233, 376);
-            comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(121, 23);
-            comboBox1.TabIndex = 43;
+            textBox7.Location = new Point(218, 156);
+            textBox7.Name = "textBox7";
+            textBox7.Size = new Size(100, 23);
+            textBox7.TabIndex = 53;
             // 
-            // comboBox2
+            // textBox8
             // 
-            comboBox2.FlatStyle = FlatStyle.Popup;
-            comboBox2.FormattingEnabled = true;
-            comboBox2.Location = new Point(233, 294);
-            comboBox2.Name = "comboBox2";
-            comboBox2.Size = new Size(121, 23);
-            comboBox2.TabIndex = 44;
+            textBox8.Location = new Point(218, 193);
+            textBox8.Name = "textBox8";
+            textBox8.Size = new Size(100, 23);
+            textBox8.TabIndex = 54;
             // 
-            // comboBox3
+            // textBox9
             // 
-            comboBox3.FlatStyle = FlatStyle.Popup;
-            comboBox3.FormattingEnabled = true;
-            comboBox3.Location = new Point(233, 193);
-            comboBox3.Name = "comboBox3";
-            comboBox3.Size = new Size(121, 23);
-            comboBox3.TabIndex = 45;
+            textBox9.Location = new Point(218, 231);
+            textBox9.Name = "textBox9";
+            textBox9.Size = new Size(100, 23);
+            textBox9.TabIndex = 55;
             // 
-            // comboBox4
+            // textBox10
             // 
-            comboBox4.FlatStyle = FlatStyle.Popup;
-            comboBox4.FormattingEnabled = true;
-            comboBox4.Location = new Point(233, 112);
-            comboBox4.Name = "comboBox4";
-            comboBox4.Size = new Size(121, 23);
-            comboBox4.TabIndex = 46;
+            textBox10.Location = new Point(218, 276);
+            textBox10.Name = "textBox10";
+            textBox10.Size = new Size(100, 23);
+            textBox10.TabIndex = 56;
             // 
-            // RetrieveBtn
+            // search
             // 
-            RetrieveBtn.BorderStyle = BorderStyle.None;
-            RetrieveBtn.Cursor = Cursors.IBeam;
-            RetrieveBtn.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            RetrieveBtn.Location = new Point(657, 536);
-            RetrieveBtn.Name = "RetrieveBtn";
-            RetrieveBtn.Size = new Size(100, 19);
-            RetrieveBtn.TabIndex = 47;
-            RetrieveBtn.Text = "Retrieve";
-            RetrieveBtn.TextAlign = HorizontalAlignment.Center;
-            RetrieveBtn.TextChanged += RetrieveBtn_TextChanged;
+            search.BackColor = Color.DarkSeaGreen;
+            search.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            search.Location = new Point(71, 384);
+            search.Name = "search";
+            search.Size = new Size(86, 32);
+            search.TabIndex = 57;
+            search.Text = "Search";
+            search.UseVisualStyleBackColor = false;
             // 
-            // DeleteBtn
+            // BACK
             // 
-            DeleteBtn.BorderStyle = BorderStyle.None;
-            DeleteBtn.Cursor = Cursors.IBeam;
-            DeleteBtn.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            DeleteBtn.Location = new Point(1034, 536);
-            DeleteBtn.Name = "DeleteBtn";
-            DeleteBtn.Size = new Size(100, 19);
-            DeleteBtn.TabIndex = 48;
-            DeleteBtn.Text = "Delete";
-            DeleteBtn.TextAlign = HorizontalAlignment.Center;
-            DeleteBtn.TextChanged += DeleteBtn_TextChanged;
+            BACK.BackColor = Color.DarkSeaGreen;
+            BACK.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            BACK.Location = new Point(143, 565);
+            BACK.Name = "BACK";
+            BACK.Size = new Size(86, 32);
+            BACK.TabIndex = 58;
+            BACK.Text = "Back";
+            BACK.UseVisualStyleBackColor = false;
             // 
-            // UpdateBtn
+            // UPDATE
             // 
-            UpdateBtn.BorderStyle = BorderStyle.None;
-            UpdateBtn.Cursor = Cursors.IBeam;
-            UpdateBtn.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            UpdateBtn.Location = new Point(851, 536);
-            UpdateBtn.Name = "UpdateBtn";
-            UpdateBtn.Size = new Size(100, 19);
-            UpdateBtn.TabIndex = 49;
-            UpdateBtn.Text = "Update";
-            UpdateBtn.TextAlign = HorizontalAlignment.Center;
-            UpdateBtn.TextChanged += UpdateBtn_TextChanged;
+            UPDATE.BackColor = Color.DarkSeaGreen;
+            UPDATE.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            UPDATE.Location = new Point(200, 452);
+            UPDATE.Name = "UPDATE";
+            UPDATE.Size = new Size(86, 32);
+            UPDATE.TabIndex = 59;
+            UPDATE.Text = "Update";
+            UPDATE.UseVisualStyleBackColor = false;
             // 
-            // CreateBtn
+            // DELETE
             // 
-            CreateBtn.BorderStyle = BorderStyle.None;
-            CreateBtn.Cursor = Cursors.IBeam;
-            CreateBtn.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            CreateBtn.Location = new Point(481, 536);
-            CreateBtn.Name = "CreateBtn";
-            CreateBtn.Size = new Size(100, 19);
-            CreateBtn.TabIndex = 50;
-            CreateBtn.Text = "Create";
-            CreateBtn.TextAlign = HorizontalAlignment.Center;
-            CreateBtn.TextChanged += CreateBtn_TextChanged;
+            DELETE.BackColor = Color.DarkSeaGreen;
+            DELETE.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            DELETE.Location = new Point(71, 452);
+            DELETE.Name = "DELETE";
+            DELETE.Size = new Size(86, 32);
+            DELETE.TabIndex = 60;
+            DELETE.Text = "Delete";
+            DELETE.UseVisualStyleBackColor = false;
             // 
-            // BackBtn
+            // ADD
             // 
-            BackBtn.FlatStyle = FlatStyle.Popup;
-            BackBtn.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            BackBtn.Location = new Point(1, 0);
-            BackBtn.Name = "BackBtn";
-            BackBtn.Size = new Size(75, 23);
-            BackBtn.TabIndex = 51;
-            BackBtn.Text = "Back";
-            BackBtn.UseVisualStyleBackColor = true;
-            BackBtn.Click += BackBtn_Click;
+            ADD.BackColor = Color.DarkSeaGreen;
+            ADD.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            ADD.Location = new Point(200, 384);
+            ADD.Name = "ADD";
+            ADD.Size = new Size(86, 32);
+            ADD.TabIndex = 61;
+            ADD.Text = "Add";
+            ADD.UseVisualStyleBackColor = false;
             // 
             // BorrowingRecords
             // 
@@ -239,16 +225,16 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.MediumSeaGreen;
             ClientSize = new Size(1259, 696);
-            Controls.Add(BackBtn);
-            Controls.Add(CreateBtn);
-            Controls.Add(UpdateBtn);
-            Controls.Add(DeleteBtn);
-            Controls.Add(RetrieveBtn);
-            Controls.Add(comboBox4);
-            Controls.Add(comboBox3);
-            Controls.Add(comboBox2);
-            Controls.Add(comboBox1);
-            Controls.Add(comboBox6);
+            Controls.Add(ADD);
+            Controls.Add(DELETE);
+            Controls.Add(UPDATE);
+            Controls.Add(BACK);
+            Controls.Add(search);
+            Controls.Add(textBox10);
+            Controls.Add(textBox9);
+            Controls.Add(textBox8);
+            Controls.Add(textBox7);
+            Controls.Add(textBox6);
             Controls.Add(label1);
             Controls.Add(dataGridView1);
             Controls.Add(textBox4);
@@ -274,15 +260,16 @@
         private TextBox textBox4;
         private DataGridView dataGridView1;
         private Label label1;
-        private ComboBox comboBox6;
-        private ComboBox comboBox1;
-        private ComboBox comboBox2;
-        private ComboBox comboBox3;
-        private ComboBox comboBox4;
-        private TextBox RetrieveBtn;
         private TextBox DeleteBtn;
-        private TextBox UpdateBtn;
-        private TextBox CreateBtn;
-        private Button BackBtn;
+        private TextBox textBox6;
+        private TextBox textBox7;
+        private TextBox textBox8;
+        private TextBox textBox9;
+        private TextBox textBox10;
+        private Button search;
+        private Button BACK;
+        private Button UPDATE;
+        private Button DELETE;
+        private Button ADD;
     }
 }
